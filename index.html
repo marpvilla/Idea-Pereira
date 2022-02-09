@@ -9,32 +9,49 @@
     <link rel="stylesheet" href="./css/style.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
 </head>
 
 <body>
-    <header>
+    <header class="container-fluid">
         <img src="img/logo.png" class="logo" alt="Logo del sitio">
-        <nav>
-            <ul class="menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="./pages/nosotros.html">Nosotros</a></li>
-                <li><a href="./pages/productos.html">Productos</a>
-                    <ul class="submenu">
-                        <li><a href="./pages/accesorios.html">Accesorios</a></li>
-                        <li><a href="./pages/notebooks.html">Notebooks</a></li>
+        <nav class="navbar navbar-expand-lg navbar-light bg-menu">
+            <div class="">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Tienda</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="./pages/productos.html">Productos</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="./pages/accesorios.html">Accesorios</a></li>                      
+                      <li><a class="dropdown-item" href="./pages/notebooks.html">Notebooks</a></li>
                     </ul>
-                </li>
-                <li><a href="./pages/contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/pages/contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
 
-    <main>
-    <h1 class="centrado animate__animated animate__flipInX">Bienvenidos</h1>
+    <main class="container">
+        <h1 class="centrado animate__animated animate__flipInX">Bienvenidos</h1>
 
-        <article>
+        <article class="row">
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque gravida tempus auctor. Vestibulum luctus 
                 congue ipsum. Aliquam vitae odio ultricies, gravida nisl ac, mollis mi. Curabitur eu velit lobortis, 
@@ -46,30 +63,38 @@
             </p>
         </article>
 
-        <section class="imgHome gridImg animate__animated animate__rotateInDownLeft">
-            <img src="img/notebook.jpg" alt="Imagen de una impresora">
-            <img src="img/impresora.jpg" alt="Imagen de una notebook">
-            <img src="img/teclado.jpg" alt="Imagen de unteclado con un mouse">
+        <section class="row animate__animated animate__rotateInDownLeft">
+            <article class="col-sm-4">
+                <img src="img/notebook.jpg" alt="Imagen de una impresora" class="img-thumbnail img-fluid shadow-pop-tr">
+            </article>
+
+            <article class="col-sm-4">
+                <img src="img/impresora.jpg" alt="Imagen de una notebook" class="img-thumbnail img-fluid shadow-pop-tr">
+            </article>
+
+            <article class="col-sm-4">
+                <img src="img/teclado.jpg" alt="Imagen de unteclado con un mouse" class="img-thumbnail img-fluid shadow-pop-tr">
+            </article>
         </section>
 
-        <article class="gridsubs">
-            <div>
-                <h2 class="subsflex animate__animated animate__flipInX">Subtítulo</h2>
-                <p class="subsflex">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque gravida tempus auctor. Vestibulum 
-                    luctus congue ipsum. Aliquam vitae odio ultricies, gravida nisl ac, mollis mi. Curabitur eu velit 
-                    lobortis, consequat tortor nec, rutrum lectus. Vestibulum sit amet feugiat quam.</p> 
+        <section class="row">
+            <div class="col-sm-6">
+                <h2 class="animate__animated animate__flipInX">Subtítulo</h2>
+                <p class="justificado">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque gravida tempus auctor. Vestibulum
+                  luctus congue ipsum. Aliquam vitae odio ultricies, gravida nisl ac, mollis mi. Curabitur eu velit
+                  lobortis, consequat tortor nec, rutrum lectus. Vestibulum sit amet feugiat quam.</p> 
             </div>
 
-            <div>
-                <h2 class="subsflex animate__animated animate__flipInX">Subtítulo</h2>
-                <p class="subsflex">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque gravida tempus auctor. Vestibulum 
-                    luctus congue ipsum. Aliquam vitae odio ultricies, gravida nisl ac, mollis mi. Curabitur eu velit 
-                    lobortis, consequat tortor nec, rutrum lectus. Vestibulum sit amet feugiat quam.</p>
+            <div class="col-sm-6">
+                <h2 class="animate__animated animate__flipInX">Subtítulo</h2>
+                <p class="justificado">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque gravida tempus auctor. Vestibulum
+                  luctus congue ipsum. Aliquam vitae odio ultricies, gravida nisl ac, mollis mi. Curabitur eu velit
+                  lobortis, consequat tortor nec, rutrum lectus. Vestibulum sit amet feugiat quam.</p>
             </div>
-        </article>
+    </section>
     </main>
     
-    <footer>
+    <footer class="container-fluid">
         <section>
             <a href="www.facebook.com"><img src="img/facebook.png" alt="Botón a red social facebook"></a>
             <a href="www.twitter.com"><img src="img/twitter.png" alt="Botón a red social twitter"></a>
@@ -78,5 +103,7 @@
 
         <p>Todos los derechos reservados</p>
     </footer>
+
+<script src="./bootstrap/js/bootstrap.js"></script>
 </body>
 </html>
