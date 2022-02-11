@@ -1,0 +1,229 @@
+//Esto es un comentario de linea en SCSS
+/*Esto es un comentario de bloque en CSS PURO*/
+
+@import "animaciones";
+
+$beige-claro:#fefae0;
+$beige-oscuro:#d4a373;
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Calibri', sans-serif;
+}
+
+body {
+    display: grid;
+    grid-template-areas:
+    "cabeza"
+    "principal" 
+    "pie";
+    grid-template-rows: auto auto 120px;
+    background-color: $beige-claro;
+    width: 100%;
+    height: 100vh;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Baloo Bhaijaan 2', cursive;
+  color: $beige-oscuro;
+}
+
+.logo {
+    display: block;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    width: 10%;
+}
+
+/*GRID AREAs*/
+
+header {
+    grid-area: cabeza;
+}
+
+nav {
+    grid-area: menu;
+}
+
+main {
+    grid-area: principal;
+}
+
+footer {
+    grid-area: pie;
+}
+
+/*GRIDs*/
+
+.gridImg {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.gridsubs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.subsflex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 12px;
+}
+
+/*Propiedades del cuerpo*/
+
+h2 {
+    margin-top: 5px;
+}
+
+.centrado {
+    text-align: center;
+}
+
+.con-cen {
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+article {
+    width: 100%;
+    p {
+        text-align: justify;
+        margin: 0% 2% 10px 2%;
+    }
+}
+
+.textoCuadrado {
+    margin: 2% 30% 2% 30%;
+}
+
+.imgHome {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    img {
+        width: 15%;
+        margin: 5px;
+    }
+}
+
+div h2 {
+    text-align: center;
+}
+
+.subs1 {
+    width: 100%;
+    display: inline-block;
+
+}
+
+.imgProd {
+    width: 70%;
+}
+
+.justificado {
+    text-align: justify;
+}
+
+/*Propiedades de video*/
+
+.video-size {
+    width: 560px;
+    height: 315px;
+}
+
+/*Propiedades productos*/
+
+.productos {
+    display: inline-block;
+    img {
+        width: 150px;
+    }
+}
+
+.prodDistancia {
+    margin: 10px;
+}
+
+/*Propiedades del pie*/
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+    background-color: $beige-oscuro;
+    padding: 8px;
+    p {
+        margin-top: 10px;
+    color: $beige-claro;
+    }
+    img {
+        width: 45px;
+    }
+}
+
+/*MEDIA QUERIEs*/
+
+/* Desktop */
+@media (min-width: 1024px) {
+    body {
+        width: 100%;
+        height: 100vh;
+    }
+    h1 {
+        margin-top: -20px;
+    }
+}
+
+/* Tablets */
+@media (min-width: 576px) and (max-width: 1023px) {
+    body {
+        width: 100%;
+        height: 100vh;
+    }
+    .logo {
+        display: block;
+        margin-top: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 5px;
+        width: 20%;
+    }
+    h1 {
+        margin-top: -3px;
+    }
+    iframe {
+        width: 400px;
+        height: 260px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 575px) {
+    .logo {
+        display: block;
+        margin-top: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 5px;
+        width: 20%;
+    }
+    body {
+        width: 100%;
+        height: 100vh;
+        grid-template-rows: px auto 10px;
+    }
+    h1 {
+        margin-top: -32px;
+    }
+    iframe {
+        width: 300px;
+        height: 200px;
+    }
+}
