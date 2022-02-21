@@ -132,6 +132,63 @@ div h2 {
     text-align: justify;
 }
 
+form {
+    div {
+        margin-bottom: 10px;
+    }
+}
+
+iframe {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+/*Propiedades Botones*/
+
+$txtboton: (
+    colorf: white,
+    alineacion: center,
+    deco: none,
+    tamano: 16px
+);
+
+
+@mixin sizebtn($ancho, $alto) {
+    height: $alto;
+    width: $ancho;
+}
+
+.boton {
+    border: none;
+    padding: 15px 32px;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    color: map-get($map: $txtboton, $key: colorf);
+    text-align: map-get($map: $txtboton, $key: alineacion);
+    text-decoration: map-get($map: $txtboton, $key: deco);
+    font-size: map-get($map: $txtboton, $key: tamano);
+    @include sizebtn(100px,100px)
+}
+
+.boton1 {
+    @extend .boton;
+    background-color: #4CAF50;
+    color: yellow;
+} 
+
+.boton2 {
+    @extend .boton;
+    background-color: #008CBA;
+    color:#fefae0;
+}
+
+.boton3 {
+    @extend .boton;
+    background-color: red;
+    color:#fefae0;
+}
+
 /*Propiedades de video*/
 
 .video-size {

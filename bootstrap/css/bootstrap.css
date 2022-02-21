@@ -230,11 +230,11 @@ sup {
 }
 
 a {
-  color: #0d6efd;
+  color: $beige-claro;
   text-decoration: underline;
 }
 a:hover {
-  color: #0a58ca;
+  color: $beige-claro;
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -599,6 +599,15 @@ progress {
 }
 
 .img-thumbnail {
+  padding: 0.25rem;
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 0.25rem;
+  max-width: 60%;
+  height: auto;
+}
+
+.img-thumbnail-hnd {
   padding: 0.25rem;
   background-color: #fff;
   border: 1px solid #dee2e6;
@@ -6054,7 +6063,7 @@ textarea.form-control-lg {
   justify-content: center;
   width: 15%;
   padding: 0;
-  color: #fff;
+  color: #d4a373;
   text-align: center;
   background: none;
   border: 0;

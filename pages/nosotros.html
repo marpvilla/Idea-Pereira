@@ -4,34 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GOLIATH - Tienda tecnológica</title>
+    <meta name="keywords" content="tecnología, computación, impresoras, informática"/>
+    <meta name="description" content="Tienda de recursos de tecnología en general. Informática y computación."/>
+    <title>Nosotros: GOLIATH - Tienda tecnológica</title><title>GOLIATH - Tienda tecnológica</title>
     <link rel="shortcut icon" href="" type="image/x-icon">
     <link rel="stylesheet" href="../css/style.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
 </head>
 
 <body>
-    <header>
+    <header class="container-fluid">
         <img src="../img/logo.png" class="logo" alt="Logo del sitio">
-        <nav>
-            <ul class="menu">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="./nosotros.html">Nosotros</a></li>
-                <li><a href="./productos.html">Productos</a>
-                    <ul class="submenu">
-                        <li><a href="./accesorios.html">Accesorios</a></li>
-                        <li><a href="./notebooks.html">Notebooks</a></li>
+        <nav class="navbar navbar-expand-lg navbar-light bg-menu">
+            <div class="">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="nosotros.html">Nosotros</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Tienda</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="productos.html">Productos</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="accesorios.html">Accesorios</a></li>                      
+                      <li><a class="dropdown-item" href="notebooks.html">Notebooks</a></li>
                     </ul>
-                </li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
 
-    <main>
+    <main class="container">
         <h1 class="centrado animate__animated animate__flipInX">Nosotros</h1>
             <div class="centrado">
                 <img class="animate__animated animate__jackInTheBox" src="../img/nostros.png" width="30%" alt="Dibujo de gente trabajando">
@@ -47,14 +66,14 @@
         </div>
     </main>
 
-    <footer>
+    <footer class="container-fluid">
         <section>
-            <a href="www.facebook.com"><img src="../img/facebook.png" alt="Botón a red social facebook"></a>
-            <a href="www.twitter.com"><img src="../img/twitter.png" alt="Botón a red social twitter"></a>
-            <a href="www.youtube.com"><img src="../img/youtube.png" alt="Botón a red social youtube"></a>
+            <a href="www.facebook.com"><img src="../img/facebook.png" width="3%" alt="Botón a red social facebook"></a>
+            <a href="www.twitter.com"><img src="../img/twitter.png" width="3%" alt="Botón a red social twitter"></a>
+            <a href="www.youtube.com"><img src="../img/youtube.png" width="3%" alt="Botón a red social youtube"></a>
         </section>
-
         <p>Todos los derechos reservados</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html> 

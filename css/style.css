@@ -22,25 +22,25 @@
 
 @-webkit-keyframes shadow-pop-tr {
   0% {
-    -webkit-box-shadow: 0 0 #d4a373,0 0 #d4a373,0 0 #d4a373,0 0 #d4a373,0 0 #d4a373,0 0 #d4a373,0 0 #d4a373,0 0 #d4a373;
-    box-shadow: 0 0 #d4a373,0 0 #d4a373,0 0 #d4a373,0 0 #d4a373,0 0 #d4a373,0 0 #d4a373,0 0 #d4a373,0 0 #d4a373;
+    -webkit-box-shadow: 0 0 #d4a373, 0 0 #d4a373, 0 0 #d4a373, 0 0 #d4a373, 0 0 #d4a373, 0 0 #d4a373, 0 0 #d4a373, 0 0 #d4a373;
+    box-shadow: 0 0 #d4a373, 0 0 #d4a373, 0 0 #d4a373, 0 0 #d4a373, 0 0 #d4a373, 0 0 #d4a373, 0 0 #d4a373, 0 0 #d4a373;
     -webkit-transform: translateX(0) translateY(0);
     transform: translateX(0) translateY(0); }
   100% {
-    -webkit-box-shadow: 1px -1px #d4a373,2px -2px #d4a373,3px -3px #d4a373,4px -4px #d4a373,5px -5px #d4a373,6px -6px #d4a373,7px -7px #d4a373,8px -8px #d4a373;
-    box-shadow: 1px -1px #d4a373,2px -2px #d4a373,3px -3px #d4a373,4px -4px #d4a373,5px -5px #d4a373,6px -6px #d4a373,7px -7px #d4a373,8px -8px #d4a373;
+    -webkit-box-shadow: 1px -1px #d4a373, 2px -2px #d4a373, 3px -3px #d4a373, 4px -4px #d4a373, 5px -5px #d4a373, 6px -6px #d4a373, 7px -7px #d4a373, 8px -8px #d4a373;
+    box-shadow: 1px -1px #d4a373, 2px -2px #d4a373, 3px -3px #d4a373, 4px -4px #d4a373, 5px -5px #d4a373, 6px -6px #d4a373, 7px -7px #d4a373, 8px -8px #d4a373;
     -webkit-transform: translateX(-8px) translateY(8px);
     transform: translateX(-8px) translateY(8px); } }
 
 @keyframes shadow-pop-tr {
   0% {
-    -webkit-box-shadow: 0 0 #d4a373,0 0 #d4a373,0 0 #d4a373,0 0 #d4a373,0 0 #d4a373,0 0 #d4a373,0 0 #d4a373,0 0 #d4a373;
-    box-shadow: 0 0 #d4a373,0 0 #d4a373,0 0 #d4a373,0 0 #d4a373,0 0 #d4a373,0 0 #d4a373,0 0 #d4a373,0 0 #d4a373;
+    -webkit-box-shadow: 0 0 #d4a373, 0 0 #d4a373, 0 0 #d4a373, 0 0 #d4a373, 0 0 #d4a373, 0 0 #d4a373, 0 0 #d4a373, 0 0 #d4a373;
+    box-shadow: 0 0 #d4a373, 0 0 #d4a373, 0 0 #d4a373, 0 0 #d4a373, 0 0 #d4a373, 0 0 #d4a373, 0 0 #d4a373, 0 0 #d4a373;
     -webkit-transform: translateX(0) translateY(0);
     transform: translateX(0) translateY(0); }
   100% {
-    -webkit-box-shadow: 1px -1px #d4a373,2px -2px #d4a373,3px -3px #d4a373,4px -4px #d4a373,5px -5px #d4a373,6px -6px #d4a373,7px -7px #d4a373,8px -8px #d4a373;
-    box-shadow: 1px -1px #d4a373,2px -2px #d4a373,3px -3px #d4a373,4px -4px #d4a373,5px -5px #d4a373,6px -6px #d4a373,7px -7px #d4a373,8px -8px #d4a373;
+    -webkit-box-shadow: 1px -1px #d4a373, 2px -2px #d4a373, 3px -3px #d4a373, 4px -4px #d4a373, 5px -5px #d4a373, 6px -6px #d4a373, 7px -7px #d4a373, 8px -8px #d4a373;
+    box-shadow: 1px -1px #d4a373, 2px -2px #d4a373, 3px -3px #d4a373, 4px -4px #d4a373, 5px -5px #d4a373, 6px -6px #d4a373, 7px -7px #d4a373, 8px -8px #d4a373;
     -webkit-transform: translateX(-8px) translateY(8px);
     transform: translateX(-8px) translateY(8px); } }
 
@@ -153,6 +153,39 @@ div h2 {
 
 .justificado {
   text-align: justify; }
+
+form div {
+  margin-bottom: 10px; }
+
+iframe {
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
+/*Propiedades Botones*/
+.boton, .boton1, .boton2, .boton3 {
+  border: none;
+  padding: 15px 32px;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  height: 100px;
+  width: 100px; }
+
+.boton1 {
+  background-color: #4CAF50;
+  color: yellow; }
+
+.boton2 {
+  background-color: #008CBA;
+  color: #fefae0; }
+
+.boton3 {
+  background-color: red;
+  color: #fefae0; }
 
 /*Propiedades de video*/
 .video-size {
